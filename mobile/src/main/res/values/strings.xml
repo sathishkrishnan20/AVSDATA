@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AVS</string>
+
+
+    <string name="err_name">Please Enter valid User Name</string>
+
+
+
+    <string name="error_network">Network Error</string>
+
+
+</resources>

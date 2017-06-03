@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.example.skchandran.avs.AddMember">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="65dp"
+        android:background="#aae7dcdc"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingTop="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:drawableLeft="@drawable/ic_action_person"
+                android:drawableTint="#FF4081"
+                android:inputType="textPersonName"
+                android:maxLines="1" />
+
+            <AutoCompleteTextView
+                android:id="@+id/uniqueUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="UserName"
+                android:drawableLeft="@drawable/ic_action_person"
+                android:drawableTint="#FF4081"
+                android:inputType="textPersonName"
+                android:maxLines="1" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/mobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_phone"
+                android:hint="Mobile Number"
+                android:drawableTint="#FF4081"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/registerBtn"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ec45a1"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_marginTop="16dp"
+                android:text="Add Member"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
